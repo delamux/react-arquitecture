@@ -21,7 +21,11 @@ export const RouterComponent: React.FunctionComponent = () => {
           path={[switchRoutes.submoduleList, switchRoutes.login]}
           component={SubmoduleListScene}
         />
-        <Route path={switchRoutes.employees} component={EmployeeListScene} />
+        <Route
+          exact={true}
+          path={switchRoutes.employees}
+          component={EmployeeListScene}
+        />
         <Route path={switchRoutes.editEmployee} component={EmployeeScene} />
       </Switch>
     </Router>
